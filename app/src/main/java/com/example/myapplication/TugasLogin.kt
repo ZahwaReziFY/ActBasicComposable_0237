@@ -62,8 +62,10 @@ fun TugasLogin(modifier: Modifier = Modifier) {
             Image(
                 painter = logo,
                 contentDescription = null,
-                modifier = Modifier.size(160.dp),
-                contentScale = ContentScale.Fit
+                modifier = Modifier
+                    .size(160.dp)
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop
             )
             Spacer(modifier = Modifier.height(24.dp))
             Text(
