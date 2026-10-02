@@ -25,5 +25,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TugasLogin(modifier: Modifier = Modifier) {
-
+    val latar = painterResource(id = R.drawable.bg_next_day)
+    val logo = painterResource(id = R.drawable.logo_umy)
+    val foto = painterResource(id = R.drawable.notasibalok)
 }
