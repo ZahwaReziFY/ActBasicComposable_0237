@@ -34,7 +34,7 @@ fun TataletakColumn(modifier: Modifier) {
 }
 
 @Composable
-fun TataletakRow(modifier: Modifier = Modifier) {
+fun TataletakRow(modifier: Modifier) {
     Row(modifier = modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceEvenly) {
         Text(text = "Komponen 1")
@@ -45,7 +45,7 @@ fun TataletakRow(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun TataletakBox(modifier: Modifier = Modifier) {
+fun TataletakBox(modifier: Modifier) {
     Box(
         modifier = modifier
             .fillMaxHeight()
@@ -60,7 +60,7 @@ fun TataletakBox(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun TataletakColumnRow(modifier: Modifier = Modifier) {
+fun TataletakColumnRow(modifier: Modifier) {
     Column {
         // Baris 1
         Row(modifier = modifier.fillMaxWidth(),
@@ -80,7 +80,7 @@ fun TataletakColumnRow(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun TataletakRowColumn(modifier: Modifier = Modifier) {
+fun TataletakRowColumn(modifier: Modifier) {
     Row(modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
         //Kolom1
         Column {
@@ -98,11 +98,11 @@ fun TataletakRowColumn(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
+fun TataletakBoxColumnRow(modifier: Modifier) {
     val gambar = painterResource(id = R.drawable.notasibalok)
     Column{
         Box(
-            modifier = Modifier
+            modifier = modifier
                 .fillMaxWidth()
                 .height( height = 110.dp)
                 .background(color = Color.Yellow),
@@ -110,7 +110,7 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
         ) {
             Column() {
                 Row(
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
                     Text(text = "Col1_Row1_Komponen1")
@@ -118,7 +118,7 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
                     Text(text = "Col1_Row1_Komponen3")
                 }
                 Row(
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
                     Text(text = "Col1_Row2_Komponen1")
@@ -127,9 +127,9 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
                 }
             }
         }
-        Spacer(modifier = Modifier.height(10.dp))
+        Spacer(modifier = Modifier.height( height = 10.dp))
         Box(
-            modifier = Modifier
+            modifier = modifier
                 .fillMaxWidth()
                 .height( height = 300.dp)
                 .background(color = Color.Cyan),
