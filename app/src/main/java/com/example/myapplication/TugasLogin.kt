@@ -84,6 +84,18 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 color = Color.Black,
                 fontWeight = FontWeight.Bold
             )
+            Spacer(modifier = Modifier.height(20.dp))
+            // Foto dalam lingkaran
+            Box(
+                modifier = Modifier
+                    .size(300.dp)
+                    .clip(CircleShape)
+                    .border(width = 4.dp, color = Color.White, shape = CircleShape)
+                    .background(color = Color(0xFFE6E6F2)),
+                contentAlignment = Alignment.Center
+            ) {
+
+            }
         }
     }
 }
