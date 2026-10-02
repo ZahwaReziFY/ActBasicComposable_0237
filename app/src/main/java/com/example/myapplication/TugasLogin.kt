@@ -72,6 +72,12 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 color = Color.Red,
                 fontWeight = FontWeight.Bold
             )
+            Text(
+                text = "Zahwa Rezi FY",
+                fontSize = 18.sp,
+                color = Color.Blue,
+                fontWeight = FontWeight.Bold
+            )
         }
     }
 }
