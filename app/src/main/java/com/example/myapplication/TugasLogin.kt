@@ -47,7 +47,12 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 .padding(top = 24.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-
+            Text(
+                text = "Login",
+                fontSize = 32.sp,
+                color = Color.Blue,
+                fontWeight = FontWeight.Bold
+            )
         }
     }
 }
