@@ -94,7 +94,12 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                     .background(color = Color(0xFFE6E6F2)),
                 contentAlignment = Alignment.Center
             ) {
-
+                Image(
+                    painter = foto,
+                    contentDescription = null,
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop
+                )
             }
         }
     }
